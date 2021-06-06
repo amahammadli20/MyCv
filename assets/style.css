@@ -1,0 +1,285 @@
+body{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0px -1px 10px 0px rgba(0,0,0,0.8);
+}
+
+.container .left-part{
+    position: relative;
+    background-color: rgb(9, 76, 97);
+    padding: 40px;
+}
+
+.container .right-part{
+    position: relative;
+    background-color: #fff;
+    padding: 40px;
+}
+
+.profile{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.profile-picture{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-picture img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile h2{
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.4em;
+}
+
+.profile h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+/* C o n t a c t */
+.contact-info{
+    color: #fff;
+    padding-top: 20px;
+}
+
+.contact-info h2{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 22px;
+    letter-spacing: 1px;
+}
+.contact-info ul{
+    position: relative;
+}
+
+.contact-info ul li{
+    position: relative;
+    margin: 10px 0;
+}
+
+.contact-info ul li:not(:first-child):not(:last-child){
+    cursor: pointer;
+}
+
+.contact-info ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color:rgb(16, 188, 240);
+}
+
+.contact-info ul li .text a{
+    text-decoration: none;
+    color:#fff;
+}
+/* E d u c a t i o n */
+.contact-info.education li:nth-child(1){
+    margin-bottom: 30px;
+}
+
+
+.contact-info.education li h5{
+    color:rgb(16, 188, 240);
+    font-weight: 600;
+}
+
+.contact-info.education ul li h4{
+    margin-top: 15px;
+}
+
+.contact-info.education ul li h4:nth-child(2){
+    font-weight: 500;
+}
+
+.contact-info.education ul li h4{
+    font-weight: 300;
+}
+
+/* L a n g u a g e s */
+.contact-info.languages .percent{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 5px;
+    margin-top:  10px;
+    background-color: rgb(2, 4, 26);
+}
+
+.contact-info.languages .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: mediumturquoise;
+}
+
+/* C e r t i f i c a t e s */
+.left-part .awards h2 a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* R I G H T   P A R T */
+.container .right-part{
+    position: relative;
+    background-color: #fff;
+    padding: 40px;
+}
+
+.about{
+    margin-bottom: 30px;
+}
+
+.about:last-child{
+    margin-bottom: 0;
+}
+
+.right-titles{
+    color:rgb(2, 4, 26);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.about p, .skills .tech-skills, .soft-skills span{
+    color: #333;
+    letter-spacing: 1.2px;
+    line-height: 17px;
+    font-size: 15px;
+}
+
+/* E x p e r i e n c e */
+.about .experience-info{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+} 
+
+.about .experience-info .year-company{
+    min-width: 180px;
+}
+
+.about .experience-info .year-company h5{
+    font-weight: 600;
+    color:rgb(2, 4, 26);
+    font-size: 15px;
+}
+.about .experience-info .year-company h5:last-child{
+    margin-top: 7px;
+}
+
+.about .experience-info .department h4{
+    font-weight: 700;
+    color: #2a7da2;
+    font-size: 16px;
+}
+
+.about .experience-info .department p{
+    margin-top:  7px;
+}
+
+/* S k i l l s */
+.skills .tech-skills, .soft-skills{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0 10px 0;
+}
+
+.skills .tech-skills h5,
+.skills .soft-skills h5{
+    min-width: 110px;
+    color:rgb(2, 4, 26);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* I n t e r e s t s */
+.interests ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.interests ul li{
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0 0 0;
+}
+
+.interests ul li .fas{
+    color: #03a9f4;
+    font-size: 18px;
+    width: 30px;
+}
+
+@media (max-width: 1000px){
+    .container{
+        margin: 10px;
+        grid-template-columns:  repeat(1, 1fr);
+    }
+
+    .interests ul{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .about .experience-info{
+        flex-direction: column;
+    }
+
+    .about .experience-info .department h4{
+        margin-top: 7px;
+    }
+
+    .skills .tech-skills, .soft-skills {
+        flex-direction: column;
+    }
+
+    .skills .tech-skills h5, .skills .soft-skills h5 {
+        margin-bottom: 10px;
+    }
+
+    .interests ul{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
