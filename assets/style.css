@@ -4,7 +4,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .container{
@@ -58,13 +58,14 @@ body{
 }
 
 .profile h2{
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-weight: 600;
     color: #fff;
     margin-top: 20px;
     text-transform: uppercase;
     text-align: center;
     line-height: 1.4em;
+    letter-spacing: 1.7px;
 }
 
 .profile h2 span{
@@ -79,11 +80,11 @@ body{
 }
 
 .contact-info h2{
-    font-size: 1.5em;
+    font-size: 1.4em;
     text-transform: uppercase;
     font-weight: 600;
-    margin-top: 22px;
-    letter-spacing: 1px;
+    margin-top: 30px;
+    letter-spacing: 1.7px;
 }
 .contact-info ul{
     position: relative;
@@ -152,7 +153,6 @@ body{
 
 /* C e r t i f i c a t e s */
 .left-part .awards h2 a{
-    text-decoration: none;
     color: #fff;
 }
 
@@ -177,8 +177,8 @@ body{
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 10px;
-    font-size: 1.3em;
-    font-weight: 600;
+    font-size: 1.4em;
+    font-weight: 900;
 }
 
 .about p, .skills .tech-skills, .soft-skills span{
