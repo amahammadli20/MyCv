@@ -83,9 +83,10 @@ body{
     font-size: 1.4em;
     text-transform: uppercase;
     font-weight: 600;
-    margin-top: 30px;
+    margin-top: 60px;
     letter-spacing: 1.7px;
 }
+
 .contact-info ul{
     position: relative;
 }
@@ -93,6 +94,14 @@ body{
 .contact-info ul li{
     position: relative;
     margin: 10px 0;
+}
+
+.contact-info ul li h4 a{
+    color: #fff;
+}
+
+.contact-info ul li h4 a:hover{
+    color:rgb(16, 188, 240);
 }
 
 .contact-info ul li:not(:first-child):not(:last-child){
@@ -156,6 +165,9 @@ body{
     color: #fff;
 }
 
+.left-part .awards h2 a:hover{
+    color: rgb(16, 188, 240);
+}
 
 /* R I G H T   P A R T */
 .container .right-part{
